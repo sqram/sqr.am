@@ -8,10 +8,10 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"    
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.7.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"
   },
