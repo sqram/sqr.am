@@ -11,7 +11,7 @@
     <div class="container">
       <header id="who">
         <div class="jumbotron">
-          <h1>sqr<span>am</span></h1>
+          <h1>sqr<span><b>△</b>m</span></h1>
           <p>
             I'm Bruce. A freelance website/webapp developer.<br><br>
             Experienced in html, css, javascript &amp; python.
