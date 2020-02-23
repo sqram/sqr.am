@@ -1,6 +1,6 @@
 <template>
   <article id="websites">
-    <section v-for="(s, i) in json" :key=i>
+    <section v-for="(s, i) in json" :key=i :class="theme">
       <div><img :src="s.screenshots[0]" /></div>
       <div>
         <a href="" class='name'>{{s.name}}</a>
@@ -15,6 +15,12 @@
 
 <script>
 export default {
+  props: {
+    theme: {
+      required: false,
+      default: ''
+    }
+  },
   data ()
   {
     return {
@@ -79,7 +85,14 @@ export default {
       font-size 0.8em
       @media $phone
         padding 5px 5px
-
+  &.retro
+    background #111
+    gradientBorder()
+    padding-left 15px
+    a
+      color orange
+      text-decoration none
+      font-size 1.1em
 
 
 

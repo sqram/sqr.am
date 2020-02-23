@@ -53,6 +53,12 @@ module.exports = {
     */
     extend(config, ctx) {
       
-    }
+    },
+
+    loaders: {
+      stylus: {
+        import: ['~assets/variables.styl'],
+      }
+    },
   }
 }

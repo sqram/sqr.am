@@ -1,6 +1,6 @@
 <template>
   <article id="software">
-      <section v-for="(s, i) in json" :key=i>
+      <section v-for="(s, i) in json" :key=i :class="theme">
         <div>{{ ++i }}</div>
         <div>
           <a class='name' :href='s.url'>{{ s.name }}</a>
@@ -32,6 +32,12 @@
 
 <script>
 export default {
+  props: {
+    theme: {
+      required: false,
+      default: ''
+    }
+  },
   data ()
   {
     return {
@@ -119,7 +125,12 @@ export default {
           height 100%
       @media $phone
         display none
-
+  &.retro
+    & > div:first-of-type
+      border-bottom 3px solid pink
+      box-shadow 0 3px 2px #1fbbbd inset
+    & > div:nth-of-type(2)
+      border-bottom 3px solid #efc431
 
 </style>
 

@@ -20,3 +20,32 @@ $color-light = #8c9398
 $hero-span-color = #a1a9b0
 $cta-bg = rgba(61, 201, 179, 1)
 $cta-color = #fff
+
+
+
+
+
+gradientBorder()
+    background alpha(#000, 100%)
+    background-clip padding-box
+    /* !importanté */
+    border solid 5px transparent
+    color #fff
+    position relative
+    border-top-right-radius 30px
+    border-bottom-left-radius 30px
+    
+    &:before
+      content: ''
+      position: absolute
+      top 0
+      right 0
+      bottom 0
+      left 0
+      z-index -1
+      margin -5px
+      /* !importanté */
+      border-radius inherit
+      /* !importanté */
+      background -webkit-gradient(linear, left top, right top, from(#b861c6), to(#ffc7c7))
+      background linear-gradient(to right, #b861c6 0%,#ffc7c7 100%)

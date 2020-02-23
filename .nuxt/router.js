@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _887585f4 = () => interopDefault(import('../pages/synthwave.vue' /* webpackChunkName: "pages/synthwave" */))
 const _735d78ba = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
@@ -15,6 +16,10 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/synthwave",
+    component: _887585f4,
+    name: "synthwave"
+  }, {
     path: "/",
     component: _735d78ba,
     name: "index"
