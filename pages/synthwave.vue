@@ -5,7 +5,7 @@
       <a href="/">normal</a>
       <a href="" @click.prevent="handleClick('websites')" title='websites'>websites</a>
       <a href="" @click.prevent="handleClick('software')" title='software'>software</a>
-      <a href="" @click.prevent="handleClick('contact')" title='websites'>contact</a>
+      <!-- <a href="" @click.prevent="handleClick('contact')" title='websites'>contact</a> -->
     </nav>
 
     <header>
@@ -137,6 +137,8 @@
       padding 20px 55px
       &:first-of-type
         margin-right 2em
+      &:hover
+        z-index 5
   h1
     font-size 8em
     letter-spacing 53px

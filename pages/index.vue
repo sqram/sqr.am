@@ -5,7 +5,7 @@
       <a href="/synthwave">retro_</a>
       <a href="" @click.prevent="handleClick('websites')" title='websites'>websites</a>
       <a href="" @click.prevent="handleClick('software')" title='software'>software</a>
-      <a href="" @click.prevent="handleClick('contact')" title='websites'>contact</a>
+      <!-- <a href="" @click.prevent="handleClick('contact')" title='websites'>contact</a> -->
     </nav>
 
 
