@@ -10,12 +10,18 @@
 
     <header>
       <h1 class="logo">
-        <d>S</d> <d>Q</d> <d>R</d> <d>A</d> <d>M </d>
+        SQRAM
       </h1>  
         
       <div class="buttons">
         <button @click.prevent="handleClick('websites')">WEBAPPS</button>
         <button @click.prevent="handleClick('software')">SOFTWARE</button>
+      </div>
+
+      
+      <div class="sunwrap">
+        <div class="sun"></div>
+      
       </div>
     </header>      
 
@@ -60,11 +66,36 @@
   }
 </script>
 <style lang="stylus">
+  $pink = #ce24b1
 
 
-
-  $yellow = #efc431
-  $blue = #00cbff
+   
+  .sunwrap
+    position absolute        
+    display flex
+    justify-content center
+    height 0
+    width 100%
+    overflow hidden
+    top 51%   
+    animation sun 10s 
+    animation-fill-mode forwards
+    animation-delay 1.5s
+    z-index -1    
+    
+    box-sizing border-box
+    
+  .sun
+    width 500px
+    height 500px
+    background linear-gradient($yellow, $pink)
+    border-radius 400px
+    position absolute
+    top 0
+    box-shadow 0 0 10px $yellow
+    margin 1em 0
+    
+    
   
   html
     height 100%
@@ -94,6 +125,7 @@
     align-items center
     height 100vh
     justify-content center
+    position relative
 
   .buttons
     display flex
@@ -107,7 +139,7 @@
         margin-right 2em
   h1
     font-size 8em
-    letter-spacing 12px
+    letter-spacing 53px
     font-weight bold
     color #444  
     text-align center
@@ -135,4 +167,12 @@
     &:last-of-type
       margin-bottom 20vh
 
+  @keyframes sun
+    0%
+      height 0
+      top 51%
+    100%
+      height 550px
+      top 21%
+      position fixed
 </style>

@@ -131,6 +131,9 @@ export default {
       box-shadow 0 3px 2px #1fbbbd inset
     & > div:nth-of-type(2)
       border-bottom 3px solid #efc431
+      a
+        color pink 
+        text-decoration none
 
 </style>
 
