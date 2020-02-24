@@ -105,7 +105,7 @@
     flex-direction column
     align-items center
     font-family 'Varela Round'  
-    background url(/img/bg/retro1.webp)
+    background url(/img/bg/retro1.webp) #33294F
     background-size 100% 100%
     background-attachment fixed
   nav
