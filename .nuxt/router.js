@@ -4,6 +4,7 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _31bf731c = () => interopDefault(import('../pages/⚡.vue' /* webpackChunkName: "pages/⚡" */))
+const _8c3b1122 = () => interopDefault(import('../pages/retro.vue' /* webpackChunkName: "pages/retro" */))
 const _735d78ba = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
@@ -19,6 +20,10 @@ export const routerOptions = {
     path: "/⚡",
     component: _31bf731c,
     name: "⚡"
+  }, {
+    path: "/retro",
+    component: _8c3b1122,
+    name: "retro"
   }, {
     path: "/",
     component: _735d78ba,
