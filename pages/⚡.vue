@@ -81,7 +81,7 @@
     animation sun 10s 
     animation-fill-mode forwards
     animation-delay 1.5s
-    z-index -1    
+    z-index -2
     
     box-sizing border-box
     
