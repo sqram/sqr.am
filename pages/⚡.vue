@@ -92,7 +92,8 @@
     border-radius 400px
     position absolute
     top 0
-    box-shadow 0 0 10px $yellow
+    box-shadow 0 0 15px $yellow, 0 0 5px 2px $pink
+    box-shadow 0 0 15px $yellow
     margin 1em 0
     
     
@@ -104,7 +105,7 @@
     flex-direction column
     align-items center
     font-family 'Varela Round'  
-    background url(https://w.wallhaven.cc/full/2k/wallhaven-2kpr3y.jpg)
+    background url(/img/bg/retro1.webp)
     background-size 100% 100%
     background-attachment fixed
   nav
